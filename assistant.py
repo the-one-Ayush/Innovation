@@ -98,7 +98,7 @@ def assistant():
    engine.runAndWait()
  
  elif 'weather' in Query:
-   driver= webdriver.Chrome(r'C:\Users\[YOUR NAME]\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages\selenium\chromedriver.exe')  # Optional argument, if not specified will search path.
+   driver= webdriver.Chrome(r'C:\Users\YOUR USERNAME\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local-packages\python38\site-packages\selenium\chromedriver.exe')  # Optional argument, if not specified will search path.
    driver.get("https://www.google.com/search?q=weather") # add your computer's username above
    time.sleep(1)
    element = driver.find_element_by_id("wob_tm")
