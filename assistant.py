@@ -162,7 +162,7 @@ def assistant():
         global cont
         cont= "no"
 
-
+#some more ideas
 #make a teach mode where you teach assistant questions and answers
 # create a column unique_token_words which contains the token words from question
 # the assistant searches for keywords in the question and then answers
