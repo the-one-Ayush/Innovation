@@ -23,6 +23,7 @@ jobs:
     - name: setup-chromedriver
     - uses: nanasess/setup-chromedriver@v1.0.1
     - name: Install dependencies
+      uses: 
       run: |
         shell: python
         python -m pip install --upgrade pip
