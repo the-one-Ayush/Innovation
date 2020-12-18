@@ -12,7 +12,7 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
     - uses: actions/checkout@v2
@@ -20,11 +20,17 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: 3.8
+    - name: setup-chromedriver
+    - uses: nanasess/setup-chromedriver@v1.0.1
     - name: Install dependencies
       run: |
+        shell: python
         python -m pip install --upgrade pip
         pip install flake8 pytest
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        pip install mysql-connector-python
+        pip install selenium
+        pip install pyttsx3
+        pip install wikipedia
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
