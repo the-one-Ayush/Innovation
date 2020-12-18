@@ -2,10 +2,10 @@ import pyttsx3
 import wikipedia
 import datetime
 import webbrowser
-import subprocess
 import mysql.connector
 import time
 from selenium import webdriver
+
 def getsimilar(str1, str2): 
     a = set(str1.split()) 
     b = set(str2.split())
